@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Flexo-Medium";
-  src: url(./font/Flexo-Medium.ttf);
+  src: url(../font/Flexo-Medium.ttf);
 }
 
 body {
   margin: 0;
   font-family: "Flexo-Medium";
-  background: url(./img/body-bg.png);
+  background: url(../img/body-bg.png);
   background-size: cover;
   background-attachment: fixed;
 }
