@@ -1,0 +1,154 @@
+@media (max-width: 1500px) {
+  #content {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 770px) {
+  .popup-content {
+    max-width: 90%;
+  }
+
+  .arrow-container {
+    display: flex;
+    justify-content: center;
+    gap: 480px;
+    transition: 0.3s ease;
+    height: 30px;
+  }
+
+  .back-arrow-container {
+    margin-top: -350px;
+  }
+
+  .next-arrow-container {
+    margin-top: -350px;
+  }
+}
+
+@media (max-width: 630px) {
+  .popup-content {
+    max-height: 600px;
+    top: 25%;
+    max-width: 70%;
+  }
+
+  .close-button-container {
+    margin-bottom: 10px;
+  }
+
+  .close-button {
+    height: 40px;
+  }
+
+  .pokemon-info-big {
+    gap: 15px;
+  }
+
+  .pokemon-info-big span {
+    font-size: 22px;
+  }
+
+  .popup-image {
+    height: 200px;
+  }
+
+  .ability-container-big {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .ability-border-big {
+    width: 70px;
+    height: 15px;
+  }
+
+  .ability-border-big span {
+    font-size: 11px;
+  }
+
+  .chart-container {
+    max-width: 370px;
+    max-height: 200px;
+    box-sizing: border-box;
+  }
+
+  .chart {
+    height: 200px !important;
+    max-width: 346px;
+    box-sizing: border-box;
+  }
+
+  .arrow-container {
+    display: flex;
+    justify-content: center;
+    gap: 310px;
+    transition: 0.3s ease;
+    height: 0px;
+  }
+
+  .back-arrow-container {
+    margin-top: 30px;
+  }
+
+  .next-arrow-container {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 558px) {
+  #content {
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .arrow-container {
+    gap: 230px;
+  }
+}
+
+@media (max-width: 470px) {
+  input {
+    width: 200px;
+    height: 22px;
+  }
+
+  .arrow-container {
+    gap: 210px;
+  }
+}
+
+@media (max-width: 400px) {
+  .popup-content {
+    width: 500px;
+    max-width: 80%;
+    top: 17%
+  }
+
+  #content {
+    margin: auto;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 360px) {
+  .header-container {
+    gap: 15px;
+  }
+
+  .arrow-container {
+    gap: 150px;
+  }
+
+  a img {
+    height: 70px;
+  }
+
+  input {
+    width: 180px;
+    height: 22px;
+  }
+}

@@ -1,0 +1,323 @@
+@font-face {
+  font-family: "Flexo-Medium";
+  src: url(./font/Flexo-Medium.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: "Flexo-Medium";
+  background: url(./img/body-bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  gap: 30px;
+}
+
+.input {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+input {
+  width: 300px;
+  height: 25px;
+  padding: 10px;
+  border: 2px solid #a0a0a0;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Flexo-Medium";
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+input::placeholder {
+  font-size: 20px;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4d585d;
+  font-size: 18px;
+  color: #394145;
+  caret-color: #5d5d5d;
+}
+
+a img {
+  height: 80px;
+  max-width: 70px;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 1440px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 0 100px 140px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+#content img {
+  height: 200px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.show-more {
+  background-image: linear-gradient(to bottom,
+      rgb(247, 42, 42) 30%,
+      rgba(33, 33, 33, 0.867) 50%,
+      rgba(255, 255, 255, 0.359) 75%);
+  max-width: 10px;
+  height: 50px;
+  color: rgb(220, 220, 220);
+  padding: 15px 23px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Flexo-Medium";
+  border: 2px solid rgb(51, 51, 51);
+  border-radius: 50px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+button span {
+  text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
+}
+
+.show-more span {
+  display: inline-block;
+  position: absolute;
+  animation: slideDown 2s infinite;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.pokemon-container {
+  margin: 20px;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.pokemon-container:hover {
+  transform: translateY(-10px);
+}
+
+.pokemon-count {
+  color: #959595;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 14px;
+}
+
+.pokemon-info h5 {
+  font-size: 22px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.pokemon-info-big {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.pokemon-info-big span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.pokemon-count-big {
+  color: #959595;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.ability-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.ability-container-big {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.ability-border {
+  width: 95px;
+  border-radius: 4px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.ability-border-big {
+  width: 95px;
+  border-radius: 4px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.ability-border span {
+  font-size: 13px;
+}
+
+.ability-border-big span {
+  font-size: 13px;
+}
+
+.ability-border-small span {
+  font-size: 13px;
+}
+
+.popup-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 10px;
+  position: fixed;
+  top: 16%;
+  width: 450px;
+  max-width: 80%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.close-button {
+  cursor: pointer;
+}
+
+.close-button-container {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+
+.popup-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-image {
+  height: 350px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.chart {
+  max-width: 370px;
+  height: 200px !important;
+  box-sizing: border-box;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  gap: 600px;
+  max-width: 100%;
+  transition: 0.3s ease;
+  height: 30px;
+}
+
+.back-arrow-container {
+  margin-top: -350px;
+}
+
+.next-arrow-container {
+  margin-top: -350px;
+}
+
+.back-arrow-container img {
+  height: 70px;
+  cursor: pointer;
+}
+
+.next-arrow-container img {
+  height: 70px;
+  cursor: pointer;
+}

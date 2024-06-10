@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokédex</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./script.js"></script>
+  <script src="./charts.js"></script>
+  <script src="./pokemonColor.js"></script>
+  <script src="./HTMLTemplate.js"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./responsive.css" />
+  <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/png" />
+</head>
+
+<body onload="init()">
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <a onclick="reloadPage()" href=""><img src="./img/logo.png" alt="pokedex-logo" /></a>
+      </div>
+      <div class="input">
+        <input oninput="searchPokemon()" id="searchPokemonInputField" type="text" placeholder="Search Pokemon..." />
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="content"></div>
+    <div class="button-container">
+      <button id="button" class="show-more" onclick="loadMorePokemon()">
+        <span>↓</span>
+      </button>
+    </div>
+  </main>
+  <div class="popup-background" id="popupBackground">
+    <div class="popup-content" id="popupContent"></div>
+  </div>
+</body>
+
+</html>
